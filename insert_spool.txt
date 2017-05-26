@@ -1,0 +1,433 @@
+MariaDB [geography]> insert into CONTINENT values('NorthAmerica');
+Query OK, 1 row affected (0.08 sec)
+
+MariaDB [geography]> insert into country values('Mexico','NorthAmerica', 'MexicoCity');
+Query OK, 1 row affected (0.13 sec)
+
+MariaDB [geography]> insert into country values('Canada','NorthAmerica', 'Ottawa' );
+Query OK, 1 row affected (0.25 sec)
+
+MariaDB [geography]> insert into country values('UnitedStates','NorthAmerica', 'Washington');
+Query OK, 1 row affected (0.14 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Alabama', 'UnitedStates', 'Montgomery');
+Query OK, 1 row affected (0.16 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Alaska', 'UnitedStates', 'Juneau');
+Query OK, 1 row affected (0.12 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Arizona', 'UnitedStates', 'Phoenix');
+Query OK, 1 row affected (0.12 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Arkansas', 'UnitedStates', 'LittleRock');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('California', 'UnitedStates', 'Sacramento');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Colorado', 'UnitedStates', 'Denver');
+Query OK, 1 row affected (0.05 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Connecticut', 'UnitedStates', 'Hartford');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Delaware', 'UnitedStates', 'Dover');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('DistrictOfColumbia', 'UnitedStates', 'Washington');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Florida', 'UnitedStates', 'Tallahassee');
+Query OK, 1 row affected (0.05 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Georgia', 'UnitedStates', 'Atlanta');
+Query OK, 1 row affected (0.10 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Hawaii', 'UnitedStates', 'Honolulu');
+Query OK, 1 row affected (0.08 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Idaho', 'UnitedStates', 'Boise');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Illinois', 'UnitedStates', 'Springfield');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Indiana', 'UnitedStates', 'Indianapolis');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Texas', 'UnitedStates', 'Austin');
+Query OK, 1 row affected (0.07 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Iowa', 'UnitedStates', 'Des Moines');
+Query OK, 1 row affected (0.07 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Kansas', 'UnitedStates', 'Topeka');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Kentucky', 'UnitedStates', 'Frankfort');
+Query OK, 1 row affected (0.07 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Louisiana', 'UnitedStates', 'Baton Rouge');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Maine', 'UnitedStates', 'Augusta');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Maryland', 'UnitedStates', 'Annapolis');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Massachusetts', 'UnitedStates', 'Boston');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Michigan', 'UnitedStates', 'Lansing');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Minnesota', 'UnitedStates', 'Saint Paul');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Mississippi', 'UnitedStates', 'Jackson');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Missouri', 'UnitedStates', 'Jefferson City');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Montana', 'UnitedStates', 'Helena');
+Query OK, 1 row affected (0.10 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Nebraska', 'UnitedStates', 'Lincoln');
+Query OK, 1 row affected (0.09 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Nevada', 'UnitedStates', 'Carson City');
+Query OK, 1 row affected (0.21 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('New Hampshire', 'UnitedStates', 'Concord');
+Query OK, 1 row affected (0.09 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('New Jersey', 'UnitedStates', 'Trenton');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('New Mexico', 'UnitedStates', 'Santa Fe');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('New York', 'UnitedStates', 'Albany');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('North Carolina', 'UnitedStates', 'Raleigh');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('North Dakota', 'UnitedStates', 'Bismarck');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Ohio', 'UnitedStates', 'Columbus');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Oklahoma', 'UnitedStates', 'Oklahoma City');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Oregon', 'UnitedStates', 'Salem');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Pennsylvania', 'UnitedStates', 'Harrisburg');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Rhode Island', 'UnitedStates', 'Providence');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('South Carolina', 'UnitedStates', 'Columbia');
+Query OK, 1 row affected (0.13 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('South Dakota', 'UnitedStates', 'Pierre');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Tennessee', 'UnitedStates', 'Nashville');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Utah', 'UnitedStates', 'Salt Lake City');
+Query OK, 1 row affected (0.21 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Vermont', 'UnitedStates', 'Montpelier');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Virginia', 'UnitedStates', 'Richmond');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Washington', 'UnitedStates', 'Olympia');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('West Virginia', 'UnitedStates', 'Charleston');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Wisconsin', 'UnitedStates', 'Madison');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Wyoming', 'UnitedStates', 'Cheyenne');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('BritishColumbia', 'Canada', 'Victoria');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Alberta', 'Canada', 'Edmonton');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Saskatchewan', 'Canada', 'Regina');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Manitoba', 'Canada', 'Winnipeg');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Ontario', 'Canada', 'Toronto');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Quebec', 'Canada', 'Quebec City');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Yukon', 'Canada', 'Whitehorse');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Chihuahua', 'Mexico', 'Chihuahua');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Sonora', 'Mexico', 'Hermosillo');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('NuevoLeon', 'Mexico', 'Monterrey');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Coahuila', 'Mexico', 'Saltillo');
+Query OK, 1 row affected (0.07 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Tamaulipas', 'Mexico', 'Ciudad Victoria');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into state(StateName,CountryName,State_CapitalCity) values('Baja California', 'Mexico', 'Mexicali');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> 
+MariaDB [geography]> insert into country_neighbouringcountries values('Canada', 'UnitedStates');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into country_neighbouringcountries values('Mexico', 'UnitedStates');
+Query OK, 1 row affected (0.15 sec)
+
+MariaDB [geography]> insert into country_neighbouringcountries values('UnitedStates', 'Canada');
+Query OK, 1 row affected (0.12 sec)
+
+MariaDB [geography]> insert into country_neighbouringcountries values('UnitedStates', 'Mexico');
+Query OK, 1 row affected (0.05 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('Canada', 1990, 27296860);
+Query OK, 1 row affected (0.12 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('Canada', 2000, 31902268);
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('Canada', 2007, 33212696);
+Query OK, 1 row affected (0.26 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('Mexico', 1990, 84540000);
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('Mexico', 2000, 103400165);
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('Mexico', 2007, 109955400);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('UnitedStates', 1990, 253498149);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('UnitedStates', 2000, 281421906);
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> insert into country_populationhistory(CountryName,Year,Population) values('UnitedStates', 2007, 301621157);
+Query OK, 1 row affected (0.10 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into city values('Montgomery', 'Alabama', -86.32, 32.40,197014);
+Query OK, 1 row affected (0.07 sec)
+
+MariaDB [geography]> insert into city values('Juneau', 'Alaska', -134.53, 58.36,30191);
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into city values('Phoenix', 'Arizona', -112.07, 33.45,1198064);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into city values('LittleRock', 'Arkansas', -92.28, 34.75,175303);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into city values('Sacramento', 'California', -121.49, 38.59,404168);
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into city values('Denver', 'Colorado', -105.08, 39.69,499055);
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into city values('Hartford', 'Connecticut',-72.67, 41.79,131523);
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into city values('Dover', 'Delaware', -75.49, 39.16,30369);
+Query OK, 1 row affected (0.05 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into waterbodies values('GulfOfMexico');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> insert into waterbodies values('AtlanticOcean');
+Query OK, 1 row affected (0.07 sec)
+
+MariaDB [geography]> insert into waterbodies values('PacificOcean');
+Query OK, 1 row affected (0.08 sec)
+
+MariaDB [geography]> insert into waterbodies values('GreatLakes');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into adjacentstate values('AtlanticOcean', 'Georgia');
+Query OK, 1 row affected (0.07 sec)
+
+MariaDB [geography]> insert into adjacentstate values('AtlanticOcean', 'Florida');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> insert into adjacentstate values('GulfOfMexico', 'Texas');
+Query OK, 1 row affected (0.16 sec)
+
+MariaDB [geography]> insert into adjacentstate values('PacificOcean', 'BritishColumbia'); 
+Query OK, 1 row affected (0.10 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into state_neighbouringcountries values('Texas', 'Mexico');
+Query OK, 1 row affected (0.08 sec)
+
+MariaDB [geography]> insert into state_neighbouringcountries values('Chihuahua', 'UnitedStates');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into state_neighbouringcountries values('Sonora', 'UnitedStates');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> insert into state_neighbouringcountries values('NuevoLeon', 'UnitedStates');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into state_populationhistory(StateName,Year,Population) values('Alberta', 2007, 3512368);
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> insert into state_populationhistory(StateName,Year,Population) values('BritishColumbia', 2007, 4428356);
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> insert into adjacentcontinent values('GulfOfMexico', 'NorthAmerica');
+Query OK, 1 row affected (0.14 sec)
+
+MariaDB [geography]> insert into adjacentcontinent values('AtlanticOcean', 'NorthAmerica'); 
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> insert into adjacentcontinent values('PacificOcean', 'NorthAmerica'); 
+Query OK, 1 row affected (0.11 sec)
+
+MariaDB [geography]> insert into adjacentcontinent values('GreatLakes', 'NorthAmerica');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('California','Nevada');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Arizona','Nevada');
+Query OK, 1 row affected (0.13 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Arizona','New Mexico');
+Query OK, 1 row affected (0.22 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('New Mexico','Texas');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Texas','Louisiana');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Louisiana','Mississippi');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Michigan','Wisconsin');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Washington','Yukon');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('AtlanticOcean','Juneau');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('AtlanticOcean','Dover');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('GreatLakes','Dover');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('GulfOfMexico','Montgomery');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('GulfOfMexico','Denver');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('PacificOcean','Sacramento');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('PacificOcean','LittleRock');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('PacificOcean','Hartford');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcity VALUES('GulfOfMexico','Phoenix');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> 
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('AtlanticOcean','Canada');
+Query OK, 1 row affected (0.05 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('AtlanticOcean','Mexico');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('GreatLakes','Canada');
+Query OK, 1 row affected (0.14 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('GulfOfMexico','Mexico');
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('PacificOcean','Canada');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('PacificOcean','Mexico');
+Query OK, 1 row affected (0.14 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('PacificOcean','UnitedStates');
+Query OK, 1 row affected (0.16 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('AtlanticOcean','UnitedStates');
+Query OK, 1 row affected (0.04 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('GulfOfMexico','UnitedStates');
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [geography]> INSERT INTO adjacentcountry VALUES('GreatLakes','UnitedStates');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> insert into state_neighbouringcountries values('California', 'Mexico');
+Query OK, 1 row affected (0.10 sec)
+
+MariaDB [geography]> insert into state_neighbouringcountries values('Arizona', 'Mexico');
+Query OK, 1 row affected (0.11 sec)
+
+MariaDB [geography]> insert into state_neighbouringcountries values('New Mexico', 'Mexico');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Minnesota','Ontario');
+Query OK, 1 row affected (0.05 sec)
+
+MariaDB [geography]> INSERT INTO state_neighbouringstates VALUES('Minnesota','Manitoba');
+Query OK, 1 row affected (0.06 sec)
+
+MariaDB [geography]> tee E:/db/Project2/query_spool.txt

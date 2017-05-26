@@ -1,0 +1,187 @@
+MariaDB [(none)]> create database geography;
+Query OK, 1 row affected (0.03 sec)
+
+MariaDB [(none)]> use geography;
+Database changed
+MariaDB [geography]> create table Continent( ContinentName VARCHAR(20) NOT NULL ,PRIMARY KEY(ContinentName) );
+Query OK, 0 rows affected (0.45 sec)
+
+MariaDB [geography]> create table Country( 
+    -> CountryName VARCHAR(20) NOT NULL,
+    -> ContinentName VARCHAR(20) NOT NULL,
+    -> CapitalCity VARCHAR(20) NOT NULL,
+    -> Primary key(CountryName)
+    -> );
+Query OK, 0 rows affected (0.39 sec)
+
+
+MariaDB [geography]> create table State(
+    -> StateName VARCHAR(20) NOT NULL,
+    -> State_CapitalCity VARCHAR(20) NOT NULL,
+    -> CountryName VARCHAR(20) NOT NULL,
+    -> Primary key(StateName)
+    -> );
+Query OK, 0 rows affected (0.30 sec)
+
+
+MariaDB [geography]> create table City(
+    -> CityName Varchar(20) NOT NULL,
+    -> StateName Varchar(20) NOT NULL,
+    -> Latitude float NOT NULL,
+    -> Longitude float NOT NULL,
+    -> CurrentPopulation INT NOT NULL,
+    -> Primary Key(CityName)
+    -> );
+Query OK, 0 rows affected (0.50 sec)
+
+MariaDB [geography]> create table Country_PopulationHistory(
+    -> Year int NOT NULL,
+    -> CountryName Varchar(20) NOT NULL,
+    -> Population INT,
+    -> Primary key(Year,CountryName)
+    -> );
+Query OK, 0 rows affected (0.34 sec)
+
+MariaDB [geography]> create table State_PopulationHistory(
+    -> Year int NOT NULL,
+    -> StateName Varchar(20) NOT NULL,
+    -> Population INT,
+    -> Primary Key(Year,StateName)
+    -> );
+Query OK, 0 rows affected (0.38 sec)
+
+MariaDB [geography]> Country_NeighbouringCountries(
+    -> CountryName Varchar(20) NOT NULL,
+    -> Neighbour_CountryName Varchar(20) Not Null,
+    -> Primary key(CountryName,Neighbour_CountryName)
+    -> );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'Country_NeighbouringCountries(
+CountryName Varchar(20) NOT NULL,
+Neighbour_Count' at line 1
+MariaDB [geography]> Create table Country_NeighbouringCountries(
+    -> CountryName Varchar(20) NOT NULL,
+    -> Neighbour_CountryName Varchar(20) Not Null,
+    -> Primary key(CountryName,Neighbour_CountryName)
+    -> );
+Query OK, 0 rows affected (0.34 sec)
+
+MariaDB [geography]> Create table State_NeighbouringStates(
+    -> StateName Varchar(20) NOT NULL,
+    -> Neighbour_StateName Varchar(20) NOT NULL,
+    -> Primary key(StateName,Neighbour_StateName)
+    -> );
+Query OK, 0 rows affected (0.35 sec)
+
+MariaDB [geography]> create table State_NeighbouringCountries(
+    -> CountryName Varchar(20) Not Null,
+    -> Neighbour_CountryName Varchar(20) Not Null,
+    -> Primary Key(CountryName,Neighbour_CountryName)
+    -> );
+Query OK, 0 rows affected (0.38 sec)
+
+MariaDB [geography]> create table WaterBodies(
+    -> WBName Varchar(20) Not Null,
+    -> Primary Key(WBName)
+    -> );
+Query OK, 0 rows affected (0.33 sec)
+
+MariaDB [geography]> create table AdjacentCountry(
+    -> WBName Varchar(20) Not null,
+    -> Adj_CountryName Varchar(20) Not Null,
+    -> Primary Key(WBName,Adj_CountryName)
+    -> );
+Query OK, 0 rows affected (0.36 sec)
+
+MariaDB [geography]> create table AdjacentState(
+    -> WBName Varchar(20) Not null,
+    -> Adj_StateName Varchar(20) Not Null,
+    -> Primary Key(WBName,Adj_StateName)
+    -> );
+Query OK, 0 rows affected (0.26 sec)
+
+MariaDB [geography]> create table AdjacentContinent(
+    -> WBName Varchar(20) Not null,
+    -> Adj_ContinentName Varchar(20) Not Null,
+    -> Primary Key(WBName,Adj_ContinentName)
+    -> );
+Query OK, 0 rows affected (0.38 sec)
+
+MariaDB [geography]> create table AdjacentCity(
+    -> WBName Varchar(20) Not null,
+    -> Adj_CityName Varchar(20) Not Null,
+    -> Primary Key(WBName,Adj_CityName)
+    -> );
+Query OK, 0 rows affected (0.28 sec)
+
+MariaDB [geography]> Alter table country add foreign key(ContinentName) references Continent(ContinentName);
+Query OK, 0 rows affected (1.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table state add foreign key(CountryName) references Country(CountryName);
+Query OK, 0 rows affected (1.23 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table city add foreign key(StateName) references State(StateName);
+Query OK, 0 rows affected (1.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table country_neighbouringcountries add foreign key(CountryName) references Country(CountryName);
+Query OK, 0 rows affected (0.81 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table country_populationhistory add foreign key(CountryName) references Country(CountryName);
+Query OK, 0 rows affected (0.89 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentCountry add foreign key(Adj_CountryName) references Country(CountryName);
+Query OK, 0 rows affected (0.83 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentCountry add foreign key(WBName) references WaterBodies(WBName);
+Query OK, 0 rows affected (0.88 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table state_neighbouringstates add foreign key(StateName) references State(StateName);
+Query OK, 0 rows affected (0.94 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table state_neighbouringCountries add foreign key(StateName) references State(StateName);
+ERROR 1072 (42000): Key column 'StateName' doesn't exist in table
+MariaDB [geography]> Alter table state_neighbouringcountries add foreign key(StateName) references State(StateName);
+ERROR 1072 (42000): Key column 'StateName' doesn't exist in table
+MariaDB [geography]> Alter table state_neighbouringcountries add foreign key(StateName) references State(StateName);
+Query OK, 0 rows affected (0.87 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table state_populationhistory add foreign key(StateName) references State(StateName);
+Query OK, 0 rows affected (1.14 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentState add foreign key(Adj_StateName) references State(StateName);
+Query OK, 0 rows affected (0.99 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentState add foreign key(WBName) references WaterBodies(WBName);
+Query OK, 0 rows affected (1.88 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentCity add foreign key(WBName) references WaterBodies(WBName);
+Query OK, 0 rows affected (0.93 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentCity add foreign key(CityName) references City(CityName);
+ERROR 1072 (42000): Key column 'CityName' doesn't exist in table
+MariaDB [geography]> Alter table AdjacentCity add foreign key(Adj_CityName) references City(CityName);
+Query OK, 0 rows affected (1.26 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentContinent add foreign key(WBName) references WaterBodies(WBName);
+Query OK, 0 rows affected (1.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [geography]> Alter table AdjacentContinent add foreign key(ContinentName) references Continent(ContinentName);
+ERROR 1072 (42000): Key column 'ContinentName' doesn't exist in table
+MariaDB [geography]> Alter table AdjacentContinent add foreign key(Adj_ContinentName) references Continent(ContinentName);
+Query OK, 0 rows affected (0.94 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+

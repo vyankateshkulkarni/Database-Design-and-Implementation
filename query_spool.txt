@@ -1,0 +1,154 @@
+MariaDB [geography]> select StateName from state_neighbouringcountries where Neighbour_countryname="Mexico";
+ERROR 2006 (HY000): MySQL server has gone away
+No connection. Trying to reconnect...
+Connection id:    4532
+Current database: geography
+
++------------+
+| StateName  |
++------------+
+| Arizona    |
+| California |
+| New Mexico |
+| Texas      |
++------------+
+4 rows in set (0.01 sec)
+
+MariaDB [geography]> select Neighbour_statename from state_neighbouringstates where statename="minnesota";
++---------------------+
+| Neighbour_statename |
++---------------------+
+| Manitoba            |
+| Ontario             |
++---------------------+
+2 rows in set (0.00 sec)
+
+MariaDB [geography]> select adj_cityname from adjacentcity where WBName="GulfOfMexico";
++--------------+
+| adj_cityname |
++--------------+
+| Denver       |
+| Montgomery   |
+| Phoenix      |
++--------------+
+3 rows in set (0.00 sec)
+
+MariaDB [geography]> SELECT Countryname,Count(*) AS Total_NoOfStates from state where countryname="UnitedStates" OR CountryName="Mexico" GROUP By CountryName;
++-------------+------------------+
+| Countryname | Total_NoOfStates |
++-------------+------------------+
+| Mexico      |                6 |
++-------------+------------------+
+1 row in set (0.00 sec)
+
+
+MariaDB [geography]> SELECT Countryname,Count(*) AS Total_NoOfStates from state where countryname="United States of America" OR CountryName="Mexico" GROUP By CountryName;
++--------------------------+------------------+
+| Countryname              | Total_NoOfStates |
++--------------------------+------------------+
+| Mexico                   |                6 |
+| United States of America |               51 |
++--------------------------+------------------+
+2 rows in set (0.00 sec)
+
+MariaDB [geography]> SELECT C.StateName from city C JOIN state S on C.CityName=S.State_CapitalCity WHERE C.CurrentPopulation>500000 AND S.CountryName="United States of America";
++---------------+
+| StateName     |
++---------------+
+| Arizona       |
+| Colorado      |
+| Indiana       |
+| Massachusetts |
+| Ohio          |
+| Oklahoma      |
+| Tennessee     |
+| Texas         |
++---------------+
+8 rows in set (0.02 sec)
+
+
+MariaDB [geography]> SELECT S.Statename from state S where S.StateName NOT IN (SELECT N.Adj_StateName from adjacentstate N where N.Adj_StateName=S.StateName) AND S.CountryName="United States of America";
++--------------------+
+| Statename          |
++--------------------+
+| Arizona            |
+| Arkansas           |
+| Colorado           |
+| DistrictOfColumbia |
+| Hawaii             |
+| Idaho              |
+| Illinois           |
+| Indiana            |
+| Iowa               |
+| Kansas             |
+| Kentucky           |
+| Michigan           |
+| Minnesota          |
+| Missouri           |
+| Montana            |
+| Nebraska           |
+| Nevada             |
+| New Mexico         |
+| North Dakota       |
+| Ohio               |
+| Oklahoma           |
+| Pennsylvania       |
+| South Dakota       |
+| Tennessee          |
+| Utah               |
+| Vermont            |
+| West Virginia      |
+| Wisconsin          |
+| Wyoming            |
++--------------------+
+29 rows in set (0.03 sec)
+
+MariaDB [geography]> SELECT S.Statename from state S where S.StateName NOT IN (SELECT N.StateName from state_neighbouringcountries N where N.StateName=S.StateName) AND S.CountryName="United States of America";
++--------------------+
+| Statename          |
++--------------------+
+| Alabama            |
+| Arkansas           |
+| Colorado           |
+| Connecticut        |
+| Delaware           |
+| DistrictOfColumbia |
+| Florida            |
+| Georgia            |
+| Hawaii             |
+| Idaho              |
+| Illinois           |
+| Indiana            |
+| Iowa               |
+| Kansas             |
+| Kentucky           |
+| Louisiana          |
+| Maryland           |
+| Massachusetts      |
+| Mississippi        |
+| Missouri           |
+| Nebraska           |
+| Nevada             |
+| New Jersey         |
+| North Carolina     |
+| Oklahoma           |
+| Oregon             |
+| Rhode Island       |
+| South Carolina     |
+| South Dakota       |
+| Tennessee          |
+| Utah               |
+| Virginia           |
+| West Virginia      |
+| Wyoming            |
++--------------------+
+34 rows in set (0.03 sec)
+
+MariaDB [geography]> select S.statename from state S join state_populationhistory P  on  S.StateName=P.StateName where P.Population >(SELECT P.population from state_populationhistory P WHERE P.statename="Texas" Group By S.StateName) and CountryName="United States of America";
++------------+
+| statename  |
++------------+
+| California |
++------------+
+1 row in set (0.00 sec)
+

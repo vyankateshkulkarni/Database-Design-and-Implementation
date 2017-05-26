@@ -1,0 +1,162 @@
+insert into CONTINENT values('NorthAmerica');
+
+insert into country values('Mexico','NorthAmerica', 'MexicoCity');
+insert into country values('Canada','NorthAmerica', 'Ottawa' );
+insert into country values('UnitedStates','NorthAmerica', 'Washington');
+
+insert into state(StateName,CountryName,State_CapitalCity) values('Alabama', 'UnitedStates', 'Montgomery');
+insert into state(StateName,CountryName,State_CapitalCity) values('Alaska', 'UnitedStates', 'Juneau');
+insert into state(StateName,CountryName,State_CapitalCity) values('Arizona', 'UnitedStates', 'Phoenix');
+insert into state(StateName,CountryName,State_CapitalCity) values('Arkansas', 'UnitedStates', 'LittleRock');
+insert into state(StateName,CountryName,State_CapitalCity) values('California', 'UnitedStates', 'Sacramento');
+insert into state(StateName,CountryName,State_CapitalCity) values('Colorado', 'UnitedStates', 'Denver');
+insert into state(StateName,CountryName,State_CapitalCity) values('Connecticut', 'UnitedStates', 'Hartford');
+insert into state(StateName,CountryName,State_CapitalCity) values('Delaware', 'UnitedStates', 'Dover');
+insert into state(StateName,CountryName,State_CapitalCity) values('DistrictOfColumbia', 'UnitedStates', 'Washington');
+insert into state(StateName,CountryName,State_CapitalCity) values('Florida', 'UnitedStates', 'Tallahassee');
+insert into state(StateName,CountryName,State_CapitalCity) values('Georgia', 'UnitedStates', 'Atlanta');
+insert into state(StateName,CountryName,State_CapitalCity) values('Hawaii', 'UnitedStates', 'Honolulu');
+insert into state(StateName,CountryName,State_CapitalCity) values('Idaho', 'UnitedStates', 'Boise');
+insert into state(StateName,CountryName,State_CapitalCity) values('Illinois', 'UnitedStates', 'Springfield');
+insert into state(StateName,CountryName,State_CapitalCity) values('Indiana', 'UnitedStates', 'Indianapolis');
+insert into state(StateName,CountryName,State_CapitalCity) values('Texas', 'UnitedStates', 'Austin');
+insert into state(StateName,CountryName,State_CapitalCity) values('Iowa', 'UnitedStates', 'Des Moines');
+insert into state(StateName,CountryName,State_CapitalCity) values('Kansas', 'UnitedStates', 'Topeka');
+insert into state(StateName,CountryName,State_CapitalCity) values('Kentucky', 'UnitedStates', 'Frankfort');
+insert into state(StateName,CountryName,State_CapitalCity) values('Louisiana', 'UnitedStates', 'Baton Rouge');
+insert into state(StateName,CountryName,State_CapitalCity) values('Maine', 'UnitedStates', 'Augusta');
+insert into state(StateName,CountryName,State_CapitalCity) values('Maryland', 'UnitedStates', 'Annapolis');
+insert into state(StateName,CountryName,State_CapitalCity) values('Massachusetts', 'UnitedStates', 'Boston');
+insert into state(StateName,CountryName,State_CapitalCity) values('Michigan', 'UnitedStates', 'Lansing');
+insert into state(StateName,CountryName,State_CapitalCity) values('Minnesota', 'UnitedStates', 'Saint Paul');
+insert into state(StateName,CountryName,State_CapitalCity) values('Mississippi', 'UnitedStates', 'Jackson');
+insert into state(StateName,CountryName,State_CapitalCity) values('Missouri', 'UnitedStates', 'Jefferson City');
+insert into state(StateName,CountryName,State_CapitalCity) values('Montana', 'UnitedStates', 'Helena');
+insert into state(StateName,CountryName,State_CapitalCity) values('Nebraska', 'UnitedStates', 'Lincoln');
+insert into state(StateName,CountryName,State_CapitalCity) values('Nevada', 'UnitedStates', 'Carson City');
+insert into state(StateName,CountryName,State_CapitalCity) values('New Hampshire', 'UnitedStates', 'Concord');
+insert into state(StateName,CountryName,State_CapitalCity) values('New Jersey', 'UnitedStates', 'Trenton');
+insert into state(StateName,CountryName,State_CapitalCity) values('New Mexico', 'UnitedStates', 'Santa Fe');
+insert into state(StateName,CountryName,State_CapitalCity) values('New York', 'UnitedStates', 'Albany');
+insert into state(StateName,CountryName,State_CapitalCity) values('North Carolina', 'UnitedStates', 'Raleigh');
+insert into state(StateName,CountryName,State_CapitalCity) values('North Dakota', 'UnitedStates', 'Bismarck');
+insert into state(StateName,CountryName,State_CapitalCity) values('Ohio', 'UnitedStates', 'Columbus');
+insert into state(StateName,CountryName,State_CapitalCity) values('Oklahoma', 'UnitedStates', 'Oklahoma City');
+insert into state(StateName,CountryName,State_CapitalCity) values('Oregon', 'UnitedStates', 'Salem');
+insert into state(StateName,CountryName,State_CapitalCity) values('Pennsylvania', 'UnitedStates', 'Harrisburg');
+insert into state(StateName,CountryName,State_CapitalCity) values('Rhode Island', 'UnitedStates', 'Providence');
+insert into state(StateName,CountryName,State_CapitalCity) values('South Carolina', 'UnitedStates', 'Columbia');
+insert into state(StateName,CountryName,State_CapitalCity) values('South Dakota', 'UnitedStates', 'Pierre');
+insert into state(StateName,CountryName,State_CapitalCity) values('Tennessee', 'UnitedStates', 'Nashville');
+insert into state(StateName,CountryName,State_CapitalCity) values('Utah', 'UnitedStates', 'Salt Lake City');
+insert into state(StateName,CountryName,State_CapitalCity) values('Vermont', 'UnitedStates', 'Montpelier');
+insert into state(StateName,CountryName,State_CapitalCity) values('Virginia', 'UnitedStates', 'Richmond');
+insert into state(StateName,CountryName,State_CapitalCity) values('Washington', 'UnitedStates', 'Olympia');
+insert into state(StateName,CountryName,State_CapitalCity) values('West Virginia', 'UnitedStates', 'Charleston');
+insert into state(StateName,CountryName,State_CapitalCity) values('Wisconsin', 'UnitedStates', 'Madison');
+insert into state(StateName,CountryName,State_CapitalCity) values('Wyoming', 'UnitedStates', 'Cheyenne');
+
+insert into state(StateName,CountryName,State_CapitalCity) values('BritishColumbia', 'Canada', 'Victoria');
+insert into state(StateName,CountryName,State_CapitalCity) values('Alberta', 'Canada', 'Edmonton');
+insert into state(StateName,CountryName,State_CapitalCity) values('Saskatchewan', 'Canada', 'Regina');
+insert into state(StateName,CountryName,State_CapitalCity) values('Manitoba', 'Canada', 'Winnipeg');
+insert into state(StateName,CountryName,State_CapitalCity) values('Ontario', 'Canada', 'Toronto');
+insert into state(StateName,CountryName,State_CapitalCity) values('Quebec', 'Canada', 'Quebec City');
+insert into state(StateName,CountryName,State_CapitalCity) values('Yukon', 'Canada', 'Whitehorse');
+
+insert into state(StateName,CountryName,State_CapitalCity) values('Chihuahua', 'Mexico', 'Chihuahua');
+insert into state(StateName,CountryName,State_CapitalCity) values('Sonora', 'Mexico', 'Hermosillo');
+insert into state(StateName,CountryName,State_CapitalCity) values('NuevoLeon', 'Mexico', 'Monterrey');
+insert into state(StateName,CountryName,State_CapitalCity) values('Coahuila', 'Mexico', 'Saltillo');
+insert into state(StateName,CountryName,State_CapitalCity) values('Tamaulipas', 'Mexico', 'Ciudad Victoria');
+insert into state(StateName,CountryName,State_CapitalCity) values('Baja California', 'Mexico', 'Mexicali');
+
+
+insert into country_neighbouringcountries values('Canada', 'UnitedStates');
+insert into country_neighbouringcountries values('Mexico', 'UnitedStates');
+insert into country_neighbouringcountries values('UnitedStates', 'Canada');
+insert into country_neighbouringcountries values('UnitedStates', 'Mexico');
+
+insert into country_populationhistory(CountryName,Year,Population) values('Canada', 1990, 27296860);
+insert into country_populationhistory(CountryName,Year,Population) values('Canada', 2000, 31902268);
+insert into country_populationhistory(CountryName,Year,Population) values('Canada', 2007, 33212696);
+insert into country_populationhistory(CountryName,Year,Population) values('Mexico', 1990, 84540000);
+insert into country_populationhistory(CountryName,Year,Population) values('Mexico', 2000, 103400165);
+insert into country_populationhistory(CountryName,Year,Population) values('Mexico', 2007, 109955400);
+insert into country_populationhistory(CountryName,Year,Population) values('UnitedStates', 1990, 253498149);
+insert into country_populationhistory(CountryName,Year,Population) values('UnitedStates', 2000, 281421906);
+insert into country_populationhistory(CountryName,Year,Population) values('UnitedStates', 2007, 301621157);
+
+insert into city values('Montgomery', 'Alabama', -86.32, 32.40,197014);
+insert into city values('Juneau', 'Alaska', -134.53, 58.36,30191);
+insert into city values('Phoenix', 'Arizona', -112.07, 33.45,1198064);
+insert into city values('LittleRock', 'Arkansas', -92.28, 34.75,175303);
+insert into city values('Sacramento', 'California', -121.49, 38.59,404168);
+insert into city values('Denver', 'Colorado', -105.08, 39.69,499055);
+insert into city values('Hartford', 'Connecticut',-72.67, 41.79,131523);
+insert into city values('Dover', 'Delaware', -75.49, 39.16,30369);
+
+insert into waterbodies values('GulfOfMexico');
+insert into waterbodies values('AtlanticOcean');
+insert into waterbodies values('PacificOcean');
+insert into waterbodies values('GreatLakes');
+
+insert into adjacentstate values('AtlanticOcean', 'Georgia');
+insert into adjacentstate values('AtlanticOcean', 'Florida');
+insert into adjacentstate values('GulfOfMexico', 'Texas');
+insert into adjacentstate values('PacificOcean', 'BritishColumbia'); 
+
+insert into state_neighbouringcountries values('Texas', 'Mexico');		
+insert into state_neighbouringcountries values('Chihuahua', 'UnitedStates');
+insert into state_neighbouringcountries values('Sonora', 'UnitedStates');
+insert into state_neighbouringcountries values('NuevoLeon', 'UnitedStates');
+
+insert into state_populationhistory(StateName,Year,Population) values('Alberta', 2007, 3512368);
+insert into state_populationhistory(StateName,Year,Population) values('BritishColumbia', 2007, 4428356);
+
+insert into adjacentcontinent values('GulfOfMexico', 'NorthAmerica');
+insert into adjacentcontinent values('AtlanticOcean', 'NorthAmerica'); 
+insert into adjacentcontinent values('PacificOcean', 'NorthAmerica'); 
+insert into adjacentcontinent values('GreatLakes', 'NorthAmerica');
+
+INSERT INTO state_neighbouringstates VALUES('California','Nevada');
+INSERT INTO state_neighbouringstates VALUES('Arizona','Nevada');
+INSERT INTO state_neighbouringstates VALUES('Arizona','New Mexico');
+INSERT INTO state_neighbouringstates VALUES('New Mexico','Texas');
+INSERT INTO state_neighbouringstates VALUES('Texas','Louisiana');
+INSERT INTO state_neighbouringstates VALUES('Louisiana','Mississippi');
+INSERT INTO state_neighbouringstates VALUES('Michigan','Wisconsin');
+INSERT INTO state_neighbouringstates VALUES('Washington','Yukon');
+
+INSERT INTO adjacentcity VALUES('AtlanticOcean','Juneau');
+INSERT INTO adjacentcity VALUES('AtlanticOcean','Dover');
+INSERT INTO adjacentcity VALUES('GreatLakes','Dover');
+INSERT INTO adjacentcity VALUES('GulfOfMexico','Montgomery');
+INSERT INTO adjacentcity VALUES('GulfOfMexico','Denver');
+INSERT INTO adjacentcity VALUES('PacificOcean','Sacramento');
+INSERT INTO adjacentcity VALUES('PacificOcean','LittleRock');
+INSERT INTO adjacentcity VALUES('PacificOcean','Hartford');
+INSERT INTO adjacentcity VALUES('GulfOfMexico','Phoenix');
+
+INSERT INTO adjacentcountry VALUES('AtlanticOcean','Canada');
+INSERT INTO adjacentcountry VALUES('AtlanticOcean','Mexico');
+INSERT INTO adjacentcountry VALUES('GreatLakes','Canada');
+INSERT INTO adjacentcountry VALUES('GulfOfMexico','Mexico');
+INSERT INTO adjacentcountry VALUES('PacificOcean','Canada');
+INSERT INTO adjacentcountry VALUES('PacificOcean','Mexico');
+INSERT INTO adjacentcountry VALUES('PacificOcean','UnitedStates');
+INSERT INTO adjacentcountry VALUES('AtlanticOcean','UnitedStates');
+INSERT INTO adjacentcountry VALUES('GulfOfMexico','UnitedStates');
+INSERT INTO adjacentcountry VALUES('GreatLakes','UnitedStates');
+
+
+
+
+insert into state_populationhistory(StateName,Year,Population) values('Alabama', 2007, 6001543);
+insert into state_populationhistory(StateName,Year,Population) values('California', 2007, 8003546);
+insert into state_populationhistory(StateName,Year,Population) values('Illinois', 2007, 7569132);
+insert into state_populationhistory(StateName,Year,Population) values('Indiana', 2007, 92351354);
+insert into state_populationhistory(StateName,Year,Population) values('New York', 2007, 10045199);
+insert into state_populationhistory(StateName,Year,Population) values('Saskatchewan', 2007, 789131856);
+insert into state_populationhistory(StateName,Year,Population) values('Texas', 2007, 89951234);
+insert into state_populationhistory(StateName,Year,Population) values('Washington', 2007, 6398135);
